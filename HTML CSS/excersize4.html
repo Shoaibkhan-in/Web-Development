@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Nav Bar</title>
+    <style>
+        :root{
+            --primary:grey;
+            --secondary:skyblue;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            margin:5px;
+        }
+        li{
+            list-style: none;
+            background-color: var(--primary);
+            float: left;
+            padding:5px;
+            border:2px solid steelblue;
+            border-radius: 5px;
+            margin:2px;
+        }
+        li:hover{
+            background-color: var(--secondary);
+        }
+        li:active{
+            transform: scale(0.97) translateY(3px);
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Reset</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

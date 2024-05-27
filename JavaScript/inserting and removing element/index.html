@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:red;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color: aqua;" data-created="by shoaib">
+        
+    </div>
+    <div class="box" data-created="shoaib">hey i am box</div>
+    <script>
+        console.log(document.querySelector(".box").innerHTML)
+        console.log(document.querySelector(".container").nodeName)
+        console.log(document.querySelector(".container").textContent)
+        console.log(document.querySelector(".container").hidden)
+        console.log(document.querySelector(".container").hidden=false)
+        console.log(document.querySelector(".container").innerHTML="hey i am shoaib");
+        console.log(document.querySelector(".container").hasAttribute("style"));
+        console.log(document.querySelector(".container").getAttribute("style"));
+        console.log(document.querySelector(".container").setAttribute("style", "display:inline"));
+        console.log(document.querySelector(".container").attributes);
+        console.log(document.querySelector(".container").removeAttribute("style"));
+        console.log(document.querySelector(".container").dataset);
+        /*let div=document.createElement("div");
+        div.innerHTML="I have been inserted <b>shoaib</b>"
+        div.setAttribute("class", "created");
+        document.querySelector(".container").append(div)
+        document.querySelector("body").before(div)*/
+        let cont=document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend", "<b> i am under the water</b>")
+        console.log(document.querySelector(".box").remove());
+        console.log(document.querySelector(".container").classList)
+        console.log(document.querySelector(".container").className)
+        console.log(document.querySelector(".container").classList.add("shoaib"))
+        console.log(document.querySelector(".container").classList.remove("shoaib"))
+        console.log(document.querySelector(".container").classList.toggle("shoaib"))
+    </script>
+</body>
+</html>

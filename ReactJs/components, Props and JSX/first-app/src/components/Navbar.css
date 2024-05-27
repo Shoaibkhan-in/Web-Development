@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+
+nav, ul{
+    display: flex;
+
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    gap:34px;
+}
+nav{
+    background-color: grey;
+    padding: 23px;
+    margin: 10px;
+}

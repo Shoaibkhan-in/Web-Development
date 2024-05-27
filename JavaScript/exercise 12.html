@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+        .box{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <script>
+        /*let back=["red", "green", "yellow", "blue", "purple"];
+        let col=["red", "green", "yellow", "blue", "purple"];
+        let rev=col.reverse();
+        let i=0; 
+        document.querySelectorAll(".box").forEach(element => {
+            element.style.backgroundColor=back[i];
+            element.style.color=rev[i];
+            i++;
+        });
+        */
+        function GetRandomColor(){
+            let r1=Math.ceil(0+Math.random()*255);
+            let r2=Math.ceil(0+Math.random()*255);
+            let r3=Math.ceil(0+Math.random()*255);
+            return `rgb(${r1},${r2},${r3})`
+        }
+        document.querySelectorAll(".box").forEach(e=>{
+            e.style.backgroundColor=GetRandomColor();
+            e.style.color=GetRandomColor();
+        })
+    </script>
+</body>
+</html>

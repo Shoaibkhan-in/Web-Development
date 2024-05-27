@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transforms</title>
+    <style>
+        .box{
+            height:100px;
+            width:100px;
+            background-color: aquamarine;
+            border:2px solid black;
+            /*transform:rotate(0.25turn);*/
+            transform-origin: 10px;
+            transform:rotateX(40deg) ;
+            transform:rotateY(40deg) ;
+            transform:rotateZ(20deg) ;
+            transform:scale(0.8);
+            transform:scale3d(2);
+            transform:skew(5deg);
+            transform: translate(34px) skew(10deg) rotate(35deg);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width:100vw;
+            height:80vh;
+            border:2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

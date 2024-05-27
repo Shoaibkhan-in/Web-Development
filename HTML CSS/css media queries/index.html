@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css Media Query</title>
+    <style>
+        body{
+            background-color:red;
+
+        }
+        .boxes{
+            display:flex;
+        }
+        .box{
+            width:344px;
+            height:344px;
+            background-color:steelblue;
+            padding:2px;
+            margin:10px;
+        }
+        @media only screen and (min-width: 250px) {
+            body{
+            background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation:landscape){
+            body{
+                background-color:purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am red Body Guy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Card Design</title>
+    <style>
+        body{
+            background-color:gray;
+            padding:45px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .card{
+            background-color:white;
+            width:198px;
+            height:344px;
+            border-radius:7px;
+        }
+        .image{
+            padding:5px;
+        }
+        .image img{
+            border-radius:7px;
+        }
+        .content{
+            padding:7 13px 5 0;
+        }
+        .content p{
+            font-size: 10px;
+            color:grey;
+        }
+        .capsule{
+            padding:3px 20px;
+        }
+        .capsule span{
+            border:1px solid black;
+            padding:0 6px;
+            border-radius:7px;
+            font-size: 12px;;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            padding: 7px 9px;
+            border-radius:15px;
+            background-color: rgb(115, 115, 207);
+            color:rgb(14, 104, 183);
+            font-size:8px;
+            border:none;
+            margin-top:7px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        .button button:hover{
+            background-color:rgba(53, 122, 183, 0.575);
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="img/luffy7.jpg" alt="" width="188">
+            <div class="capsule">
+                <span>devil Fruit</span>
+                <span>Haki</span>
+            </div>
+            <div class="content">
+                <h2>One Piece</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque modi recusandae quam quibusdam molestiae animi labore officiis aliquid assumenda? Quidem itaque reiciendis repellat.</p>
+            </div>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+</html>

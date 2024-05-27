@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS filters</title>
+    <style>
+        img{
+            filter: blur(0px);
+        }
+        .img1{
+            filter:brightness(120%);
+        }
+        .img2{
+            filter:contrast(200%);
+            filter:opacity(0.4)
+        }
+        .img3{
+            /*filter: grayscale(100%);*/
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://www.wallpapers13.com/wp-content/uploads/2015/12/Nature-Lake-Bled.-Desktop-background-image.jpg" alt="">
+        <img class="img2" src="https://www.thestatesman.com/wp-content/uploads/2019/06/srk-2.jpg" alt="">
+        <img class="img3" src="https://i.pinimg.com/originals/22/0c/ab/220cabae155ed9fc8967d2850c5435e3.jpg" alt="">
+    </div>
+</body>
+</html>

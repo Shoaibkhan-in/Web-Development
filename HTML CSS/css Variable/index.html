@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        :root{
+            --color:rgb(82, 82, 185);
+            --seccolor:rgb(189, 52, 204);
+            --defpad:10px;
+            --defop:0.3;
+        }
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        ul li{
+            opacity:var(--defop);
+            list-style-type: none;
+            padding:var(--defpad);
+            border :5px solid var(--seccolor);
+        }
+        ul{
+            display:flex;
+        }
+        div:first-child{
+            background-color: var(--color);
+        }
+        .container{
+            background-color:var(--seccolor);
+        }
+        ul li:first-child{
+            --color:rgb(243, 87,8);
+            background-color:var(--color)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed tempora illo dolorum cupiditate modi veniam quas provident, aliquid soluta nam! Unde amet, vero ratione quisquam, nesciunt laboriosam iste dolore tempora deserunt mollitia alias fugiat rem voluptas odit ipsa omnis animi nemo non labore. Voluptate, voluptas?
+        
+    </div>
+</body>
+</html>

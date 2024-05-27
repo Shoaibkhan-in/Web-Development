@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css More ON Selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color:red;
+        }
+        .box:first-line{
+            color:cadetblue;
+        }*/
+        .boxes *{
+            color:aquamarine;
+            border:2px solid black;
+        }
+        p, a, .box,[data-color="primary"]{
+            margin-top:25px;
+        }
+        .box:nth-child(even){
+            background-color:blue;
+        }
+        .box:nth-last-child(1){
+            background-color:red;
+        }
+        .boxes::before{
+            content:"something is good";
+        }
+        .boxes::after{
+            content:"i have no enemies";
+            color:red;
+        }
+        ::selection{
+            background-color:black;
+            color:yellow;
+        }
+        .box::first-letter{
+            color:brown;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color:purple;
+            font-size: 20px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  class="box">hey i am a box</div>
+        <div data-color="primary" class="box">lorem</div>
+        <div class="box">hey i am a box</div>
+        <input type="text" placeholder="type youre name here" name="" id="">
+    </div>
+</body>
+</html>

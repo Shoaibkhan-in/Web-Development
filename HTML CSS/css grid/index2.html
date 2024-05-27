@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css grid</title>
+    <style>
+        .container{
+            width:80vw;
+            border:2px solid black;
+            display:grid;
+            grid-template-areas: "nav nav nav"
+                                "side article article"
+                                "footer footer footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:20px;
+            /*justify-items: center;*/
+            align-items: center;
+        }
+        .items{
+            border:2px solid red;
+            height:55px;
+            /*width:55px;*/
+            justify-content: center;
+            align-items: center;
+        }
+        .item1{
+            grid-area:nav;
+            background-color: aquamarine;
+        }
+        .item2{
+            grid-area:side;
+            background-color: red;
+        }
+        .item3{
+            grid-area:article;
+            background-color: blue;
+        }
+        .item4{
+            grid-area:footer;
+            background-color: cadetblue;
+        }
+        .item5{
+            grid-area:nav;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+    </div>
+</body>
+</html>

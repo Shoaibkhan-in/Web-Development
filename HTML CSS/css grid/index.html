@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css grid</title>
+    <style>
+        .container{
+            border:2px solid black;
+            display:grid;
+            grid-template-columns:[first] 120px [second] 100px;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .items{
+            border:2px solid red;
+            height:55px;
+            width:55px;
+        }
+        .item4{
+            grid-column: 1/second;
+            grid-row:1/2 ;
+        }
+        .item1{
+            grid-column: 1/2;
+            grid-row:1/2 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

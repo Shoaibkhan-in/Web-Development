@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:#39ff14;
+            height: 50vh;
+            width: 50vw;
+            border : 2px solid black;
+        }
+        h1{
+            font-size: large;
+            color:white;
+        }
+        .box{
+            color:white;
+            animation :alternate
+        }
+        .blinking{
+            background-color: white;
+            animation: blink 2s delay infinite direction fill-mode;
+        }
+        @keyframes blink {
+            0%{
+                transform: scale(0.5);
+            }
+            100%{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hackers Terminal</h1>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            display:flex;
+            border:2px solid black;
+            width: 900px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        img{
+            width:400px;
+            height: 300px;
+        }
+        .text h1{
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        .text p, h1{
+            padding:20px 10px;
+        }
+        .image{
+            position:relative;
+        }
+        .capsule{
+            position:absolute;
+            bottom:4px;
+            z-index: 10;
+            right:0;
+            background:grey;
+            padding :3px;
+            border-radius: 5px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="C">
+        <div class="card">
+            <div class="image">
+                <img src="img/luffy7.jpg" alt="" width="500">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Introduction to learning </h1>
+                <p>coding practices . 727k views . 2 months ago</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="exercise13.js"></script>
+</body>
+</html>

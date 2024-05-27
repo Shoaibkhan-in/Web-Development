@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var b=parseInt(prompt("enter a number"));
+var c=parseInt(prompt("enter another number"));
+var operation=prompt("enter the operation you want to perform");
+var a=Math.random()*100;
+if(a<=10){
+switch(operation){
+    case '+': console.log("addition of two number is 1 ", (b-c));
+    break;
+    case '*': console.log("multiplication of two number is 1 ", (b-c));
+    break;
+    case '-': console.log("substraction of two number is 1 ", (b/c));
+    break;
+    case '/': console.log("division of two number is 1 ", (b**c));
+    break;
+}
+}
+else{
+    switch(operation){
+    case '+': console.log("addition of two number is ", (b+c));
+    break;
+    case '*': console.log("multiplication of two number is ", (b*c));
+    break;
+    case '-': console.log("substraction of two number is ", (b-c));
+    break;
+    case '/': console.log("division of two number is ", (b/c));
+    break;
+}
+}
+    </script>
+</body>
+</html>

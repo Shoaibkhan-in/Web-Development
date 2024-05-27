@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .container{
+            background-color: rgb(57, 118, 118);
+            height: 30vh;
+            width: 80vw;
+        }
+        .box{
+            width: 40px;
+            height: 50px;
+            background-color: aqua;
+            /*animation: MyAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 1s;
+            animation-direction:alternate-reverse;
+            animation-play-state: running;*/
+            animation: MyAnimation 3s ease-in-out 1s infinite alternate-reverse,MyAnimation1 3s ease-in-out 1s infinite alternate-reverse;
+        }
+
+        @keyframes MyAnimation {
+            from{
+                background-color: red;
+                transform: scale(0.5);
+                /*border-radius: 50px;*/
+            }
+            to{
+                background-color: yellow;
+                transform: scale(2);
+                transform: translateX(1000px);
+                /*border-radius: 20px;*/
+            }
+        }
+        @keyframes MyAnimation1 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(150deg);
+            }
+            40%{
+                transform: rotate(180deg);
+            }
+            60%{
+                transform: rotate(240deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
